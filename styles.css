@@ -1,0 +1,75 @@
+body {
+    background-color: #1a1a1a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.butterfly {
+    position: relative;
+    width: 200px;
+    height: 200px;
+}
+
+.wing {
+    position: absolute;
+    width: 100px;
+    height: 150px;
+    background-color: #444;
+    border-radius: 50%;
+}
+
+.wing-left {
+    left: 0;
+    transform: rotate(-20deg);
+    transform-origin: bottom right;
+}
+
+.wing-right {
+    right: 0;
+    transform: rotate(20deg);
+    transform-origin: bottom left;
+}
+
+.wing-pattern {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 80px;
+    height: 120px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.body {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    width: 20px;
+    height: 100px;
+    background-color: #333;
+    border-radius: 10px;
+    transform: translateX(-50%);
+}
+
+.antenna {
+    position: absolute;
+    width: 2px;
+    height: 50px;
+    background-color: #333;
+}
+
+.antenna-left {
+    top: -40px;
+    left: -10px;
+    transform: rotate(-30deg);
+}
+
+.antenna-right {
+    top: -40px;
+    right: -10px;
+    transform: rotate(30deg);
+}
